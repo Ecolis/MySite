@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/CSS/styles.css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+    <link href = "CSS/media.css" rel="stylesheet"/>
+    
+    
+    <title>CV</title>
+</head>
+<body>
+    <div class = "wrapper">
+    
+        <div class = "header"  >
+            <div class = "logo">
+                <a href="#"><img src="img\logo.png"></a>
+            </div>
+            <div class = "informathion">
+                <div class = "group">
+                    <p>Группа ЭФБО - 05 - 23</p>
+                   
+                </div>
+                <hr>  
+
+                <div class = "name">
+                    <p>Пусяк Алиса Алексеевна</p>
+                    
+                </div>
+                <hr>  
+                <div class = "connection">
+                    <a href="https://vk.com/ekolis_999"><img src="img\vk.png"></a>
+                    <a href="t.me/Ekolis999"><img src="img\telegram.png"></a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+              <li><a href='index.html'>Главная</a></li>
+              <li><a href='FirstTerm.html'>Первый семестр</a></li>
+              <li><a href='#'>Второй семестр</a></li>
+              <li><a href='#'>Услуги</a></li>
+              <li><a href='#'>Авторизация</a></li>
+            </ul>
+          </nav>
+        <div class = "content">
+            <div class = "nav-wrapper">
+                <h3>Навигация по странице</h3>
+                <ul>
+                    <li><a href="#">Frontend</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Review</a></li>
+                </ul>
+            </div>
+            <div class = "mainContent-wrapper">
+                <h2>Разработка веб приложений</h2>
+                <div class = "wrapperImgOne"> 
+                    <div class = "Button">
+                        <img src = "img/siteV.jpg" class = "imgTwo"/>
+                        <p> Сайт-визитка </p>
+
+                        <button data-service="Сайт - визитка" class="btn-new" type="button">Заказать</button>
+                    </div>
+                    <div class = "Button">
+                        <img src = "img/kOR.png" class = "imgTwo"/>
+                        <p> Сайт-визитка </p>
+                        <button class="btn-new" data-service="Корпоративный сайт" type="button">Заказать</button>
+                    </div>
+                    <div class = "Button">
+                        <img src = "img/IntShop.jpg" class = "imgTwo"/>
+                        <p> Сайт-визитка </p>
+                        <button class="btn-new" data-service=" Интернет - магазин"  type="button">Заказать</button>   
+                    </div> 
+                </div>
+                <p>Веб-разработка — это динамично развивающаяся область, которая продолжает удивлять нас новыми технологиями и инструментами. С каждым годом появляются новые тренды, которые помогают создавать более интерактивные, функциональные и красивые веб-сайты.</p>
+                <p>Одним из ключевых направлений в веб-развитии является адаптивный дизайн. В условиях многообразия устройств, от смартфонов до планшетов и десктопов, способность сайта корректно отображаться на всех экранах становится необходимостью. Адаптивные сайты не только улучшают пользовательский опыт, но и позитивно влияют на SEO-рейтинги.</p>
+                <p>Еще одним важным аспектом является использование современных фреймворков и библиотек, таких как React, Vue.js и Angular. Они значительно упрощают процесс разработки, позволяя создавать сложные приложения с минимальными затратами времени и ресурсов.</p>
+            </div>
+        </div>
+        <div class = "footer">
+            <div class = "data"> 
+                <img src = "/img/copyright.png" width = "20px" height="20px"/>
+                <p>2024</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Заказать</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <input type="hidden" id="serviceType" name="serviceType">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Страна:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Выберите страну</option>
+                        <option value="ru">Russia</option>
+                        <option value="ua">Germany</option>
+                        <option value="by">Italy</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Комментарий:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class = "checkbox">
+                    <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            Я согласен с условиями обработки данных
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class = "btn-ew" type="submit">Отправить</button>
+                </div>
+            </form>
+            <div class="success-message" id="successMessage">
+                Ваша заявка успешно отправлена!
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/script.js"></script>
+    
+    
+</body>
+</html>
