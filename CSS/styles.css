@@ -167,6 +167,7 @@ nav{
 
   li {
     padding: 6px 0px;
+    cursor: pointer;
         
     }
 
@@ -183,7 +184,7 @@ nav{
         color: #007F33;
 
       }
-
+      
       &:hover::after {
         transform: scaleX(1);
         transform-origin: left;
@@ -191,7 +192,8 @@ nav{
     }
   }
   .nav-wrapper li:hover{
-    list-style-image:url(../img/Rect.png);
+    list-style-type: initial;
+    color: #3ea24b;
     padding-left: 7px;
 }
 
