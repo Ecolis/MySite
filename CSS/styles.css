@@ -190,9 +190,16 @@ nav{
       }
     }
   }
-  .nav-wrapper li:hover{
-    list-style-image: url(../img/React.png);
-    padding-left: 7px;
+  .nav-wrapper li:active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: green; /* Цвет точки */
+    border-radius: 50%; /* Делаем точку круглой */
 }
 
 
