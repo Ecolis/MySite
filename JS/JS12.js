@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function () {
 
     //Относится к 13 работе(таблица меняется)
      const Button = document.getElementsByClassName('tableButton')[0];
