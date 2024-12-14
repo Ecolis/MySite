@@ -191,7 +191,7 @@ nav{
     }
   }
   .nav-wrapper li:hover{
-    list-style-image: url("../../img/React.png");
+    list-style-image: url("../img/React.png");
     padding-left: 7px;
 }
 
