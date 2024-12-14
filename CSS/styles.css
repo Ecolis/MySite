@@ -191,7 +191,7 @@ nav{
     }
   }
   .nav-wrapper li:hover{
-    list-style-image:url(/img/Rect.png);
+    list-style-image:url(./img/Rect.png);
     padding-left: 7px;
 }
 
